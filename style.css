@@ -196,7 +196,7 @@ nav ul li a:hover::after {
     font-size: 13px;
     font-weight: 300;
     border-radius: 7px;
-    transition: 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .skill-list div i {
@@ -219,7 +219,7 @@ nav ul li a:hover::after {
 }
 
 .skill-list div:hover {
-    background: #b54769;
+    background: #ff004f;
     transform: translatey(-10px);
 }
 
@@ -272,7 +272,7 @@ nav ul li a:hover::after {
     text-align: center;
 
     /*transition for slow popping up */
-    transition: all 0.23s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .layer h3 {
