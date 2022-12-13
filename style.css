@@ -220,7 +220,7 @@ nav ul li a:hover::after {
 
 .skill-list div:hover {
     background: #ff004f;
-    transform: translatey(-10px);
+    transform: translatey(-20px);
 }
 
 /* ***************************************** CSS FOR PORTFOLIO BEGINS FROM HERE ********************  */
