@@ -1,0 +1,439 @@
+/* IMPORTS FOR FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@500&family=Poppins:wght@600&display=swap');
+
+/* CSS RESET */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: rgb(244, 239, 239);
+}
+
+/* Removes the blue highlighting on mobiles */
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* UNCOMMENT WHEN YOU HAVE YOUR IMAGE */
+/* #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/.png");
+    background-size: contain;
+    background-position: center;
+} */
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+/* ADDING UNDERLINES AS SOMETHING AFTER THE CONTENT 
+OF THE ELEMENT */
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 1.2px;
+    transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+/* SHOW THE UNDERLINES WHEN THE USER HOVERS OVER 
+THE CONTENT AFTER THE ANCHOR NAV LINKS */
+nav ul li a:hover::after {
+    width: 103%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/********************************CSS for the about section *******************************************/
+#about {
+    padding: 80px 0px;
+    color: #ababab
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0px 40px 0px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-radius: 1.2px;
+    transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-links:hover::after {
+    width: 70%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/******************************************* CSS FOR SKILLS SECTION  ********************************************/
+#my-skills {
+    padding: 30px 0px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 7px;
+    transition: 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.skill-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.skill-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.skill-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.skill-list div:hover {
+    background: #b54769;
+    transform: translatey(-10px);
+}
+
+/* ***************************************** CSS FOR PORTFOLIO BEGINS FROM HERE ********************  */
+#portfolio {
+    padding: 50px 0px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 7px;
+    display: block;
+    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.layer {
+    /* will adjust the width and the height according to the first non-static member */
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 7px;
+
+    /* shift the layer upwards, using absolute. Means it will be relative to the first 
+    non static member in the documnet object model */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+
+    /* To bring everything in the center of the layer div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    font-size: 14px;
+    text-align: center;
+
+    /*transition for slow popping up */
+    transition: all 0.23s ease-out;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #ff004f;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 14px 50px;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff004f;
+}
+
+/* ***************************************** CONTACT-ME SECTION STARTS FROM HERE &**************************** */
+#contact {
+    padding: 30px 0px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    border-radius: 6px;
+    resize: none;
+}
+
+form input:hover,
+form textarea:hover {
+    border: 1px solid #ff004f;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-style: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ababab;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: black;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+
+    /* Now download button becomes an inline+block element
+    Since inline, takes only that much space which it requires
+    => margins on x vanshies but on y remains, this brings the button on left side */
+    display: inline-block;
+}
+
+/*************** CSS FOR THE SPAN TO SHOW MESSAGE WHEN THE USER SUBMITS THE FORM ********************/
+#message {
+    color: #61b572;
+    margin-top: -40px auto;
+    display: block;
+}
+
+/*******************************************CSS FOR THE FOOTER SECTION ******************************/
+#copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* ***************************************** SCROLL-BAR CUSTOMISATION *******************************/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff004f;
+    border-radius: 3px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #950331;
+}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sagar Wadhwa 👨‍💻</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@500&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d95b43cc6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navigation section starts from here -->
+    <section id="navigation-section">
+        <div id="header">
+            <div class="container">
+                <div class="navbar">
+                    <nav>
+                        <img src="assets/logo1.png" alt="my_logo_image" class="logo">
+
+                        <ul id="sidemenu">
+                            <li><a href="#navigation-section">Home</a></li>
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#my-skills-section">Skills</a></li>
+                            <li><a href="#portfolio-section">Portfolio</a></li>
+                            <li><a href="#blogs-section">Blogs</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="navbar_shrink()"></i>
+                        </ul>
+
+                        <!-- To be shown on small devices -->
+                        <i class="fa-solid fa-bars" onclick="navbar_expand()"></i>
+                    </nav>
+                </div>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Sagar</span> <br> Wadhwa From India</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section begins from here  -->
+    <section id="about-section">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-1">
+                        <img src="assets/author_image.jpg" alt="sagar's image">
+                    </div>&nbsp;
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi! Thanks for visiting my profile. My name is Sagar Wadhwa and I am a third year student at
+                            Amity University, pursuing my Bachelors of Technology in the field of CS. My
+                            intersts lie in Web and Backend programming. Recently I have started to learn
+                            about AI. Other than technical skills and interests, I also like to study
+                            about space.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <!-- Skills section -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Creating Websites</li>
+                                <li><span>Django</span><br>Progamming with Django</li>
+                                <li><span>Shell Scripting</span><br>Proficient in Linux and Shell Scripting</li>
+                            </ul>
+                        </div>
+
+                        <!-- Certifications Section -->
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>(06/2021 - Present)</span><br>Responsive Web Design, by freeCodeCamp</li>
+                                <li><span>(08/2021 - Present)</span><br>Let's Grow More Certificate Of Appreciation</li>
+                                <li><span>(04/2021 - 05/2021)</span><br>Google Cloud Ready Challenge</li>
+                            </ul>
+                        </div>
+
+                        <!-- Education section -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br> B.Tech in Computer Science fromAmity University, Noida
+                                </li>
+                                <li><span>2008-2020</span><br>Non-Medical with Computer Science from St. Marks Senior
+                                    Secondary Public School, Meera Bagh
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section starts from here -->
+    <section id="my-skills-section">
+        <div id="my-skills">
+            <div class="container">
+                <h1 class="sub-title">My skills</h1>
+
+                <!-- This div is divided in three columns -->
+                <div class="skill-list">
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python</h2>
+                        <p>Ability to code and create programs in python efficiently. Made flappy bird game with it.</p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>Web Dev.</h2>
+                        <p>Made a gym website, using only HTML, CSS and JS. Integrated the database services of MongoDB.
+                        </p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-linux"></i>
+                        <h2>Linux</h2>
+                        <p>Efficient with Bash / Shell Scripting and various other linux commands.</p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- This div is divided in three columns -->
+                <div class="skill-list">
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Java</h2>
+                        <p>Ability to code in Java along with good knowledge of OOPs. Made a Java AWT project with the
+                            same.
+                        </p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h2>Networking</h2>
+                        <p>Created an IoT project to control a switch remotely under Computer Networking. </p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-keyboard"></i>
+                        <h2>Touch Typing</h2>
+                        <p>Acheived average typing speed of 75 wpm, 35% faster than the average typing speed.</p>
+                        <a href="https://www.github.com/Sagar-Wadhwa-726/" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section starts from here -->
+    <section id="portfolio-section">
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+
+                <!-- This div will be containing 3 projects showcase inside it -->
+                <!-- Work starts here -->
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="assets/work-1.png" alt="project_iamge">
+                        <div class="layer">
+                            <h3>Weather Web App</h3>
+                            <p>This app lets you know the weather of cities around the world by fetching details from
+                                RapidAPI.</p>
+                            <a href="https://github.com/Sagar-Wadhwa-726/Weather-App" target="_blank"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="assets/work-2.png" alt="project_iamge">
+                        <div class="layer">
+                            <h3>Online Shopping Website</h3>
+                            <p>You can order the listed items from this website. Payments can be made through PayTM.
+                            </p>
+                            <a href="https://github.com/Sagar-Wadhwa-726/E-Kart" target="_blank"> <i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="assets/work-3.jpg" alt="project_iamge">
+                        <div class="layer">
+                            <h3>Java AWT Application</h3>
+                            <p> A Quiz Game made using Java AWT, which also stores the final scores in MySQL DB. </p>
+                            <a href="https://github.com/Sagar-Wadhwa-726/Java-AWT-Python-Quiz-Game-Application"
+                                target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Button for see more projects -->
+                <a href="https://www.github.com/Sagar-Wadhwa-726" class="btn" target="_blank">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs section starts from here -->
+    <section id="blogs-section">
+        <div id="blog">
+            <div class="container">
+                <h1 class="sub-title">Check Out My Blogs</h1>
+
+                <!-- This div will be containing 3 projects showcase inside it -->
+                <!-- Work starts here -->
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="assets/blog-2.jpg" alt="project_iamge">
+                        <div class="layer">
+                            <h3>YAML</h3>
+                            <p>Check out this amazing blog which will help you get started with YAML and its uses.</p>
+                            <a href="https://sagarwadhwa.hashnode.dev/everything-you-need-to-know-about-yaml"
+                                target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="assets/blog-1.png" alt="project_iamge">
+                        <div class="layer">
+                            <h3>Linux Commands</h3>
+                            <p>Check out this amazing blog where you will learn about some linux commands. </p>
+                            <a href="https://sagarwadhwa.hashnode.dev/essential-linux-commands" target="_blank"> <i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="assets/blog-3.jpg" alt="project_iamge">
+                        <div class="layer">
+                            <h3>Computer Networking</h3>
+                            <p> Check out this amazing blog to learn how the internet works and more. </p>
+                            <a href="https://sagarwadhwa.hashnode.dev/computer-networking-fundamentals"
+                                target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Button for see more projects -->
+                <a href="https://sagarwadhwa.hashnode.dev/" class="btn" target="_blank">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section starts from here -->
+    <section id="contact-section">
+        <div id="contact">
+            <div class="container">
+
+                <!-- Row div will be divided vertically in two columns -->
+                <div class="row">
+
+                    <!-- left part of contact -->
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>sagarwadhwa888@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-9599477689</p>
+
+                        <!-- Social icons from fontawesome -->
+                        <div class="social-icons">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/sagar1303/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/sagarw1303" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+
+                            <!-- Github -->
+                            <a href="https://github.com/Sagar-Wadhwa-726" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/wadhwa5049/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                        <!-- CV download button -->
+                        <a href="assets/Sagar's Resume.pdf" class="btn btn2" download>Download CV</a>
+                    </div>
+
+                    <!-- Right part of contact which will have form -->
+                    <div class="contact-right">
+                        <form action="https://formsubmit.co/sagarwadhwa888@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section starts from here -->
+    <footer>
+        <div id="copyright">
+            <p>Copyright &copy; Sagar Wadhwa [2023] </p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="home_javascript.js"></script>
+<script src="mobile_javascript.js"></script>
+
+</html>
